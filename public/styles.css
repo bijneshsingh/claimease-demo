@@ -190,7 +190,7 @@ h3{font-size:17px;line-height:24px;font-weight:600}
 .lg-field.err{border-color:var(--crit)}
 .lg-label{font-size:12px;line-height:16px;font-weight:600}
 .lg-row{display:flex;align-items:center;gap:10px;height:22px}
-.lg-cc{font-size:16px;font-weight:600;white-space:nowrap} .lg-cc small{font-size:12px;margin-left:2px}
+.lg-cc{display:flex;align-items:center;gap:4px;font-size:16px;line-height:22px;font-weight:600;white-space:nowrap}
 .lg-div{width:1px;height:22px;background:var(--border)}
 .lg-row input{border:none;outline:none;background:none;flex:1;min-width:0;font-size:16px;line-height:22px}
 .lg-row input::placeholder{color:var(--text-3)}
