@@ -287,7 +287,7 @@ screens.tracker = () => {
   const stepNo = s === 'action' ? 'Paused at step 3' : (s === 'approved' ? 'Step 4 of 5' : s === 'credited' ? 'Done' : 'Step 3 of 5');
   return `${bar('Claim #CE-20481', '', { action: `<button class="iconbtn" aria-label="Share" onclick="shareSheet()">${ic('share')}</button>` })}<div class="content stack-lg"><div class="claimhead"><div class="between"><div class="row" style="gap:8px"><span class="idpill">CLAIM ID</span><span class="id">#CE-20481</span></div>${chip(si[0], si[1], si[2]).replace('class="chip ', 'class="chip onDark ')}</div><div class="sub">Filed for Father · Sunrise Hospital</div><div class="boxes"><div><div class="k">Claimed total</div><div class="v">₹68,000</div></div><div><div class="k">${boxes[0]}</div><div class="v">${boxes[1]}</div></div></div></div>
 ${banner}<div class="card"><div class="between" style="margin-bottom:14px"><h3>Progress</h3>${chip(s === 'action' ? 'critical' : 'success', stepNo, s === 'action' ? 'alert' : 'checkc')}</div><div class="tl">${steps.join('')}</div></div></div>
-<div class="footer" style="display:flex;gap:12px"><button class="btn secondary" onclick="shareSheet()">Share with family</button><button class="btn secondary" onclick="go('chat')">Get help</button></div>`;
+<div class="footer duo"><button class="btn secondary" onclick="shareSheet()">Share with family</button><button class="btn secondary" onclick="go('chat')">Get help</button></div>`;
 };
 window.shareSheet = () => {
   const si = stageInfo(); const txt = `Claim #CE-20481 for Father at Sunrise Hospital: ${si[1]}. Claimed ₹68,000.${S.stage === 'approved' || S.stage === 'credited' ? ' Approved ₹62,600.' : ' Decision expected by 22 Nov.'}`;

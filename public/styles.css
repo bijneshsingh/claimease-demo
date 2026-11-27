@@ -157,7 +157,7 @@ h3{font-size:17px;line-height:24px;font-weight:600}
 .claimhead .id{font-family:var(--head);font-size:22px;font-weight:700}
 .claimhead .sub{color:rgba(255,255,255,.7);font-size:13px}
 .claimhead .boxes{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
-.claimhead .boxes div{background:rgba(255,255,255,.08);border-radius:var(--r-md);padding:10px 12px}
+.claimhead .boxes>div{background:rgba(255,255,255,.08);border-radius:var(--r-md);padding:10px 12px}
 .claimhead .boxes .k{font-size:12px;color:rgba(255,255,255,.65)} .claimhead .boxes .v{font-family:var(--head);font-size:18px;font-weight:700}
 .banner{display:flex;gap:12px;align-items:center;border-radius:12px;padding:14px;border:1px solid}
 .banner.ok{background:var(--teal-50);border-color:#C2F8E2} .banner.crit{background:var(--crit-bg);border-color:var(--crit)}
@@ -312,3 +312,10 @@ table.pay tr.total td{font-weight:700;border-top:2px solid var(--border-strong)}
 /* no visible scrollbars; content still scrolls where needed */
 *{scrollbar-width:none} *::-webkit-scrollbar{display:none}
 .btn,.footer,.appbar,.tabbar{flex-shrink:0}
+
+/* two buttons side by side in a footer: same height, same top, one line */
+.footer.duo{display:flex;gap:12px;align-items:stretch}
+.footer.duo .btn{flex:1 1 0;margin:0;padding:0 8px;white-space:nowrap;font-size:15px}
+.footer.duo .btn+.btn{margin-top:0}
+.claimhead .between{flex-wrap:wrap;row-gap:8px}
+.claimhead .idpill,.claimhead .id{white-space:nowrap}
