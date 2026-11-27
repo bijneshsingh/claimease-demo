@@ -23,16 +23,20 @@
 </head>
 <body>
 <div id="stage">
-  <div id="device">
-    <div class="fake-status" aria-hidden="true"><span id="clk">11:26</span><span style="display:flex;gap:5px;align-items:center"><svg width="15" height="12" viewBox="0 0 24 20"><path d="M12 19.5L0.6 5.6C3.7 3 7.6 1.5 12 1.5s8.3 1.5 11.4 4.1z" fill="currentColor"/></svg><svg width="12" height="12" viewBox="0 0 20 20"><path d="M1.5 18.5h17v-17z" fill="currentColor"/></svg><svg width="8" height="13" viewBox="0 0 12 20"><rect x="3.5" y=".5" width="5" height="2.5" rx="1" fill="currentColor"/><rect x=".75" y="2.75" width="10.5" height="16.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="2.5" y="6" width="7" height="11.5" rx="1" fill="currentColor"/></svg></span></div>
+  <div class="phone">
+    <span class="hw vol-up" aria-hidden="true"></span><span class="hw vol-down" aria-hidden="true"></span><span class="hw power" aria-hidden="true"></span>
+    <div id="device">
+    <div class="fake-status" aria-hidden="true"><span class="sb-left"><span id="clk">11:26</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/></svg><span style="letter-spacing:1px;font-size:10px">•••</span></span><span class="punch"></span><span class="sb-right"><svg width="15" height="12" viewBox="0 0 24 20"><path d="M12 19.5L0.6 5.6C3.7 3 7.6 1.5 12 1.5s8.3 1.5 11.4 4.1z" fill="currentColor"/></svg><svg width="12" height="12" viewBox="0 0 20 20"><path d="M1.5 18.5h17v-17z" fill="currentColor"/></svg><svg width="8" height="13" viewBox="0 0 12 20"><rect x="3.5" y=".5" width="5" height="2.5" rx="1" fill="currentColor"/><rect x=".75" y="2.75" width="10.5" height="16.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="2.5" y="6" width="7" height="11.5" rx="1" fill="currentColor"/></svg><span>77%</span></span></div>
     <main id="view"></main>
+    <span class="gesture" aria-hidden="true"></span>
+  </div>
   </div>
   <aside id="side">
-    <div class="brand"><img src="icons/icon-192.png" width="36" height="36" alt="">ClaimEase</div>
+    <div class="brand"><img src="icons/icon-192.png" width="44" height="44" alt="">ClaimEase</div>
     <span class="tag">Concept demo · sample data</span>
     <p>Health insurance reimbursement claims, made clear: an AI document check before you submit, and every update in plain words.</p>
+    <div class="tips"><b>Try the full journey</b><ol><li>Log in with any 10 digits and any 6-digit code</li><li>Start a claim and tap “Use sample”</li><li>Check documents, fix the 2 flagged items, submit</li><li>Watch updates arrive, then fix the insurer’s query</li></ol></div>
     <p><b>Best on your phone.</b> Open this link on mobile and choose “Add to Home screen” to use it like an app.</p>
-    <p>Try it: log in with any 10 digits, any 6-digit code, then start a claim. Updates arrive a few seconds after you submit.</p>
     <p class="small">Product design by Bijnesh Singh · <a href="https://www.figma.com/design/u7mRl43tPDWXc9V9dxMxQf" target="_blank" rel="noopener">Figma file</a></p>
   </aside>
 </div>
